@@ -1,0 +1,10 @@
+<h3>LISTA DE USUARIOS</h3>
+<hr>
+<button (click)="resetList ()">Reset</button>
+
+<button (click)="newList(USUARIOS_LIST2)">Nueva lista</button>
+
+<ng-container *ngFor="let usu of usuariosList">
+    <p> {{usu}} </p> <button (click)="deleteUsuario (usu)">Borrar</button>
+</ng-container>
+
